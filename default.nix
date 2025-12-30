@@ -5,7 +5,7 @@ pkgs.stdenv.mkDerivation {
   version = "0.1.0";
 
   src = pkgs.fetchFromGitHub {
-    owner = "falcon71181";
+    owner = "abhaythakur71181";
     repo = "perfmode";
     rev = "0.1.0";
     sha256 = "sha256-Fpw1Olg3JB2gDwvQM7SFqyjjF9IMnJv90HFpGaTLxa0=";
