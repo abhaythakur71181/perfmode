@@ -1,24 +1,14 @@
 { pkgs ? import <nixpkgs> { } }:
 
-pkgs.stdenv.mkDerivation {
+pkgs.rustPlatform.buildRustPackage {
   pname = "perfmode";
   version = "0.1.0";
 
   src = pkgs.fetchFromGitHub {
     owner = "abhaythakur71181";
     repo = "perfmode";
-    rev = "0.1.0";
-    sha256 = "sha256-Fpw1Olg3JB2gDwvQM7SFqyjjF9IMnJv90HFpGaTLxa0=";
+    rev = "main";
+    sha256 = "sha256-puswpidWJfurMo+8HD6++XesO4zEmqadZVIPq0j9mBs=";
   };
-
-  buildInputs = [ pkgs.rustc pkgs.cargo ];
-
-  buildPhase = ''
-    cargo build --release
-  '';
-
-  installPhase = ''
-    mkdir -p $out/bin
-    cp target/release/perfmode $out/bin/
-  '';
+  cargoHash = "sha256-puswpidWJfurMo+8HD6++XesO4zEmqadZVIPq0j9mBs=";
 }
