@@ -66,3 +66,8 @@ cargo install perfmode
 ```
 
 Clone. Make. Install. Simple as that!
+
+## Acknowledgments
+
+This project is a Rust implementation of the original [perfmode](https://github.com/icebarf/perfmode) utility created by [icebarf](https://github.com/icebarf). Special thanks to icebarf for the original work and logic.
+
