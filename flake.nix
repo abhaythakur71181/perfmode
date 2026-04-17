@@ -18,9 +18,9 @@
         {
           packages.default = pkgs.rustPlatform.buildRustPackage {
             pname = "perfmode";
-            version = "0.1.0";
+            version = "0.1.2";
             src = ./.;
-            cargoHash = "sha256-puswpidWJfurMo+8HD6++XesO4zEmqadZVIPq0j9mBs=";
+            cargoHash = "sha256-EKn1sw8m0UAoYqsKKmRmbLOrFjyropFwwM681W5XHCw=";
             nativeBuildInputs = [ pkgs.pkg-config ];
           };
 
